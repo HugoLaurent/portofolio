@@ -70,6 +70,24 @@ article {
     align-items: center;
 }
 
+/* FOOTER */
+
+footer  {
+    position: absolute;
+    bottom: -6em;
+    width: 99%;
+    text-align: center;
+    transition: bottom 2s ease-out;
+}
+
+.footer-after {
+    bottom: 2em;
+}
+
+footer img {
+    width: 5em;
+}
+
 
 
 

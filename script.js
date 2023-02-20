@@ -4,11 +4,16 @@ const mainTitle = document.querySelector("main h1")
 const splitText = mainTitle.innerText.split('');
 const animationParagraphe = document.querySelector("article p")
 const endOfFunction = new Event("endEvent");
+const footer = document.querySelector("footer")
 
 mainTitle.innerHTML = '';
 let i = 0
 
 // DOM
+
+document.addEventListener("endEvent", () => {
+    pAppear();
+})
 
 document.addEventListener("endEvent", () => {
     pAppear();
@@ -35,6 +40,7 @@ function AjoutDeLettre(){
 
 function pAppear() {
     animationParagraphe.classList.add("after-animation")
+    footer.classList.add('footer-after')
 }
 
 // mainTitle.innerHTML = "";
