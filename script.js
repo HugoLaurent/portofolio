@@ -15,11 +15,6 @@ document.addEventListener("endEvent", () => {
     pAppear();
 })
 
-document.addEventListener("endEvent", () => {
-    pAppear();
-})
-
-
 setInterval(function(){
     AjoutDeLettre();
  }
