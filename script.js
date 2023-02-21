@@ -1,6 +1,6 @@
 // Variables
 
-const mainTitle = document.querySelector("main h1")
+const mainTitle = document.querySelector("section h1")
 const splitText = mainTitle.innerText.split('');
 const animationParagraphe = document.querySelector("article p")
 const endOfFunction = new Event("endEvent");
