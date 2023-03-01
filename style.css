@@ -11,8 +11,37 @@ body {
     background-color: var(--bg-color);
     color: var(--text-second-color);
     font-family: 'Roboto Mono', monospace;
-
+    height: 100vh;
+    overflow: hidden;
 }
+
+.building img {
+  width: 2em;
+}
+
+.building {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(51, 51, 51, 0.6);
+  font-size: 5em;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  height: 100vh;
+}
+
+.building p {
+  margin: 1em;
+}
+
+
 
 /* NAV */
 
@@ -119,6 +148,13 @@ footer  {
 
 footer img {
     width: 5em;
+}
+
+@media only screen and (max-width: 1498px) {
+  body {
+      overflow: scroll;
+      height: fit-content;
+  } 
 }
 
 @media only screen and (max-width: 1216px) {
