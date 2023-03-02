@@ -22,6 +22,7 @@ body {
 .building {
   display: flex;
   flex-wrap: wrap;
+
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -39,6 +40,11 @@ body {
 
 .building p {
   margin: 1em;
+  flex: 1;
+}
+
+.building img {
+  margin: 2em;
 }
 
 
@@ -61,6 +67,11 @@ nav ul {
     display: flex;
     gap: 2em;
     font-size: 1.5em;
+}
+
+li:hover {
+  font-weight: bolder;
+  cursor: pointer;
 }
 
 /* MAIN */
